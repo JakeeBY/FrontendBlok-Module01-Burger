@@ -112,6 +112,36 @@ a {
   bottom:0;
 }
 
+.button-up {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 14px;
+  font-family: var(--nunito-sans);
+  font-weight: 700;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1E2F40;
+  background-color: var(--accent-light);
+  border: none;
+  border-radius: 5px;
+  transition: var(--tr);
+}
+
+.button-up:hover {
+  background-color: var(--accent-dark);
+}
+
+.button-up.hidden {
+  opacity: 0;
+}
+
+.button-up.visible {
+  opacity: 1;
+}
+
 /* Hero */
 
 .hero {
@@ -229,10 +259,13 @@ a {
 }
 
 .banner-btn {
+  display: block;
+  max-width: 170px;
   font-size: 14px;
   font-family: var(--nunito-sans);
   font-weight: 700;
-  padding: 22px 25px;
+  padding: 22px 0;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #1E2F40;
